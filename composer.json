@@ -1,0 +1,15 @@
+{
+    "name": "openforce-jp/admin-helper-bundle",
+    "description": "Helper for the Symfony SonataAdminBundle ",
+    "type": "symfony-bundle",
+    "license": "MIT License",
+    "require": {
+        "php" :"^5.5.9|>=7.0.8",
+        "sonata-project/admin-bundle": "^3.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "Of\\AdminHelperBundle\\": "./"
+        }
+    }
+}

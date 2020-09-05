@@ -1,0 +1,17 @@
+<?php
+namespace {{ namespace }};
+
+use Of\AdminHelperBundle\Admin;
+use Sonata\AdminBundle\Controller\CRUDController;
+
+class {{ classBasename }} extends CustomPageAdmin
+{
+
+    protected $baseRoutePattern = '{{routePattern}}';
+    protected $baseRouteName = '{{routeName}}';
+
+    public function doAction(CRUDController $controller)
+    {
+        return $controller->renderWithExtraParams("{{ template_path }}");
+    }
+}
